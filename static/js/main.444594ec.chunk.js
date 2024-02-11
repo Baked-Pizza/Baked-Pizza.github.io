@@ -724,8 +724,8 @@
 															class: "w-hours list-unstyled",
 															children: Object(m.jsxs)("li", {
 																class: "d-flex justify-content-between",
-																children: ["Min - 10 BUSD", Object(m.jsx)("span", {
-																	children: "Max - 100k BUSD"
+																children: ["Min - 0.2 BUSD", Object(m.jsx)("span", {
+																	children: "Max - 2k BUSD"
 																})]
 															})
 														})]
