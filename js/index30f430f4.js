@@ -36,9 +36,9 @@ var app = new Vue({
         package: WalletConnectProvider,
         options: {
           rpc: {
-            56: 'https://bsc-dataseed.binance.org/'
+            97: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
           },
-          chainId: 56,
+          chainId: 97,
           infuraId: 'd85fda7b424b4212ba72f828f48fbbe1',
           pollingInterval: '10000'
         }
