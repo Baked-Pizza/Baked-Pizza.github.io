@@ -623,7 +623,7 @@
 							return Object(p.a)().wrap((function(e) {
 								for (;;) switch (e.prev = e.next) {
 									case 0:
-										return t = new f.a.providers.JsonRpcProvider("https://bsc-dataseed.binance.org"), n = new f.a.Contract(M, y, t), e.next = 4, n.contractBalance();
+										return t = new f.a.providers.JsonRpcProvider("https://data-seed-prebsc-1-s1.binance.org:8545/"), n = new f.a.Contract(M, y, t), e.next = 4, n.contractBalance();
 									case 4:
 										a = e.sent, s = f.a.utils.formatEther(a), r = (Math.round(100 * s) / 100).toFixed(2), C(r);
 									case 8:
