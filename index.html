@@ -58,7 +58,7 @@
 </nav>
     <div>
   <ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" id="miners-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">BNB Miner</a></li>
+    <li role="presentation" class="active"><a href="#home" id="miners-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">烤鸡</a></li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
@@ -72,7 +72,7 @@
   			<div class="container-fluid miners-tally-container">
   				<div class="row">
   					<div class="col-md-12">
-  						<h2 class="tally-text">You have <span class="numminers">0</span> Miners</h2>
+  						<h2 class="tally-text">你的炉中有 <span class="numminers">0</span> 只烤鸡</h2>
   					</div>
   				</div>
   			</div>
@@ -81,11 +81,11 @@
   					<div class="col-md-6 nopad-left nopad-lr">
   						<div class="prod-contain-top">
   							<img alt="Miners" class="main-img" src="assets/img/minerdigging.png">
-  							<h2>Digging</h2>
+  							<h2>速度</h2>
   						</div>
   						<div class="prod-contain-bottom">
   							<h2><span id="production">0</span></h2>
-  							<p class="pphr">feet per hour</p>
+  							<p class="pphr">只/小时</p>
   							<p class="mw-250"><br/>
                   <span id="sellsforexample"></span>
                 </p>
@@ -94,13 +94,13 @@
   					<div class="col-md-6 nopad-right nopad-lr">
   						<div class="hold-contain-top">
   							<img alt="Miners" class="main-img" src="assets/img/minerwithwheelbarrel.png">
-  							<h2>Mined</h2>
+  							<h2>正在出炉</h2>
   						</div>
   						<div class="hold-contain-bottom">
   							<h2><span id="sellprice">?</span></h2>
-  							<p class="pphr">bnb in barrel</p>
+  							<p class="pphr">炉中的BNB</p>
   							<p class="mw-250"><br/><span id="timeuntilfull">?</span><br>
-  							until barrel is full</p>
+  							后炉子装满</p>
   						</div>
   					</div>
   					</div>	
@@ -108,25 +108,25 @@
   			
   					<div class="col-md-6 nopad-left nopad-lr">
   						<div class="spend-input">
-  						    <p style="color:#354D5F; font-size:14px;">Enter BNB Amount & Click Hire Below</p>
+  						    <p style="color:#354D5F; font-size:14px;">输入 BNB 金额并点击下面的“烤制”</p>
   							<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1" type="number" value="1"> <span class="bnb-text">BNB</span>
-  						</div><a class="btn btn-lg btn-buy" onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() " role="button">Hires <span id="eggstobuy">?</span> Miners</a>
+  						</div><a class="btn btn-lg btn-buy" onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() " role="button">烤 <span id="eggstobuy">?</span> 只鸡</a>
   					</div>
   				<div class="row">
   				    <div width="250"
-  			<p><a class="btn btn-lg btn-hatch" onclick="hatchEggs1(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play()" role="button">Hire More Miners</a></p>
+  			<p><a class="btn btn-lg btn-hatch" onclick="hatchEggs1(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play()" role="button">烤制更多</a></p>
   					</div>
   				<div width="250"></div>
-  						<p><a class="btn btn-lg btn-sell" onclick="sellEggs(displayTransactionMessage); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo3').play(); document.getElementById('sellprice')" role="button">Pocket Your BNB</a></p>
+  						<p><a class="btn btn-lg btn-sell" onclick="sellEggs(displayTransactionMessage); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo3').play(); document.getElementById('sellprice')" role="button">将烤鸡卖出赚取BNB</a></p>
   					</div>
 				
 					<div class="container altcolor">
 					<br>
   				<div class="row">
-  					<p><span id="contractBal">Contract Balance: ?</span></p>
+  					<p><span id="contractBal">合约余额: ？</span></p>
   				</div>
                 <div class="row">
-  					<p><span id="userTrx">Your Balance: ?</span></p>
+  					<p><span id="userTrx">你的余额: ？</span></p>
   				</div>
   			</div>
   	  
@@ -135,34 +135,51 @@
     
 		<footer class="footer">
 
+			<div class=""></div>
+
+				<div class="col-md-20">
+			<font style="font-size:20px">
+				<h1><center><p>分享您的 BNB 矿工推荐链接，当有人使用您的链接雇用矿工时，我们的合约将向您支付 <b>10%</b> 的推荐费: <a id="playerreflink" onclick="copyRef()">?
+				<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a></p></center></font></h1>
+				<br>
+				<br>
+		</div>
+
 
 			<div class="row">
 				<div class="col-lg-6">
-				    <h4><u>Sustainability</u></h4>
-                    <p>Unlike it's predecessors which paid 100% daily, causing instant and massive inflation. BNB Miner pays a modest 3% daily, allowing investors to rest easy knowing that their investments have unlimited growth potential and a maximum, improbable risk of less than 3%.
+				    <h4><u>可持续性</u></h4>
+                    <p>烤鸡项目合约是一个社区驱动的、不可变的合约，此前已经完美运行了1067天，也就是近三年的时间，并此刻任然在继续运行。</p>
+					<p>开启新一轮头矿目的是让很多没有来得及参与的加密爱好者加入这个强大的社区，因为烤鸡项目的可持续发展很大程度上取决于社区的支持。与许多硬币、代币和项目不同，烤鸡项目采用了一种算法来阻止用户立即倾销，因为这会对社区产生不利影响。所以烤鸡合约设计旨在激励长期的、以社区为中心的行为，并惩罚忽视项目和社区长期福祉的行为。</p>	
+					<p>烤鸡项目有开源且不可变的性质，这允发起人或其他任何人构建额外的前端、游戏、dapp和其他DeFi工具，以提高合约价值机器社区。考虑到这些因素，烤鸡项目的潜力和可持续性是无限的。</p>	
+						
                     
-                    <h4><u>Verified Public Contract</u></h4>
-                    <p>The BNB Miner contract is public, verified and can be viewed here on <a href="https://bscscan.com/address/0xce93f9827813761665ce348e33768cb1875a9704" target="_blank"><u>BSCScan</u></a>.
+                    <h4><u>经过验证的公共合同</u></h4>
+                    <p>	烤鸡合约是公开的、经过验证的，可以在 <a href="https://bscscan.com/address/0xce93f9827813761665ce348e33768cb1875a9704" target="_blank"><u>BSCScan</u></a>上查看，合约已经递交审计，将很快更新审计报告。
                     </p>
                     
-                    
+					<h4><u>重要安全注意事项</u></h4>
+					<p>任何项目的合法社区成员、管理员、创建者/构建者绝不会亲自通过任何方式主动联系您。谨防冒充者。</p>
+					<p>永远记住：永远不要与任何人分享您的助记词和私钥。</p>
+					<p>此外，避免与随机链接或不熟悉的网站和合同进行交互，因为它们可能会带来安全威胁或欺诈活动。</p>
 				</div>
 				<div class="col-lg-6">
-				    <h4><u>Miner Info</u></h4>
-					<p>BNB Miner pays 3% daily, according to the current mining efficiency rate. The mining efficiency rate rises and falls as you and other players hire miners, compound earnings and pocket BNB. </p>
-					<p>The object of the game is hiring more miners, sooner and more often than other players. This in turn earns you more BNB faster. Hiring more miners using your daily BNB earnings will 3x your miners within 30 days or less.</p>
-					
+				    <h4><u>矿工信息</u></h4>
+					<p>为了深入了解烤鸡项目、其合约及未来前景，我们建议您阅读精简版介绍。在雇佣矿工之前一定要进行一定的了解。 </p>
+					<p>简单来说，矿工可以被视为内部通胀代币。它们具有通货膨胀性，因为一旦矿工被雇用，他们就永久属于雇用地址，从而使该地址可以选择每天提取其矿工总价值的约 3%。矿工的价值会根据影响合约 BNB 余额及其矿工总数的社区行为而波动，例如雇用矿工、复利和将 BNB 奖励收入囊中。</p>
+					<p>用户显示的 TVL（锁定总价值）只是一个衡量标准，可帮助他们直观地了解自己在合约中的当前位置。它是根据合约的当前余额、用户的矿工总数以及整个合约的矿工总数来计算的。TVL 代表用户 BNB 矿工总数的近似值。存入的BNB和TVL均不可一次性提取。相反，该合约全天都会向用户的桶中注入大约矿工日总价值的 3%，这是为了保护项目的可持续性和防止用户立即倾销行为。 </p>
+					<p>用户可以随时将累积的奖励放入口袋或复利。然而，频繁入袋可能会导致用户的矿工数量停滞，并可能由于矿工的通货膨胀性质而导致 BNB 价值损失，尤其是在熊市周期期间。考虑到这些动态，用户应该深思熟虑地制定他们的招聘、复利和盈利习惯策略。</p>
 				</div>
                 
 			<div class=""></div>
 			    <div class="col-lg-12">
-  					<center><p><span><a href="instructions.html" target="_blank"><img alt="How To Start Mining" src="assets/img/quesionmarkguy.png" width="15%" height="auto"><b>How To Start Mining</b></a></span></p></center>
+  					<center><p><span><a href="instructions.html" target="_blank"><img alt="How To Start Mining" src="assets/img/quesionmarkguy.png" width="15%" height="auto"><b>如何开始</b></a></span></p></center>
   				</div>
 				<div class="">
 				    <div class="col-md-12">
 				<font style="font-size:14px">
-					<center><p>Share your BNB Miner referral link, our contract pays you a <b>10%</b> referral fee when anyone uses your link to hire miners: <a id="playerreflink" onclick="copyRef()">?
-					<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a></p></center></font>
+					<h1><center><p>Share your BNB Miner referral link, our contract pays you a <b>10%</b> referral fee when anyone uses your link to hire miners: <a id="playerreflink" onclick="copyRef()">?
+					<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a></p></center></font></h1>
 			</div>
 					<center><ul class="nav navbar-nav navbar-right font-weight-normal">
           <li><a class="social-pad" href="https://t.me/bnbminer" target="_blank"><img alt="Telegram" class="social-icons" src="assets/img/social-icons/telegram.svg"><span class="hide-mobile">Telegram</span></a></li>
