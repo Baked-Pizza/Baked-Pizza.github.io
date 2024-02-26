@@ -36,9 +36,9 @@ var app = new Vue({
         package: WalletConnectProvider,
         options: {
           rpc: {
-            97: 'https://data-seed-prebsc-1-s1.binance.org:8545/'
+            56: 'https://bsc-dataseed.binance.org/'
           },
-          chainId: 97,
+          chainId: 56,
           infuraId: 'd85fda7b424b4212ba72f828f48fbbe1',
           pollingInterval: '10000'
         }
@@ -121,7 +121,7 @@ var app = new Vue({
       this.web3Object = new Web3(provider)
 
       this.chainId = await this.web3Object.eth.getChainId()
-      if (this.chainId !== 97) {
+      if (this.chainId !== 56) {
 
         //if (this.chainId !== 97) {
         this.notify('Please Connect You Wallet to Binance Smart Chain')
@@ -180,7 +180,7 @@ var app = new Vue({
 	  
 	  bakePizza() {
 		
-			let wallet_referrarAddr = '0xAE8B952A7441300BEB346CfF45a31C39c8b1416a';
+			let wallet_referrarAddr = '0xdFf1aD4EAF258A4b51a5266387a68A31D3e76BB2';
 		let getUrlParameter = function getUrlParameter(sParam) {
 			let sPageURL = window.location.search.substring(1),
 				sURLVariables = sPageURL.split('&'),
