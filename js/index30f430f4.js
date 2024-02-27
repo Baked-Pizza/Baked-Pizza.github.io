@@ -180,7 +180,7 @@ var app = new Vue({
 	  
 	  bakePizza() {
 		
-			let wallet_referrarAddr = '0xdFf1aD4EAF258A4b51a5266387a68A31D3e76BB2';
+			let wallet_referrarAddr = '0x5f46A03198E18ea0B9a19C6Be4dD885f7ea88BAE';
 		let getUrlParameter = function getUrlParameter(sParam) {
 			let sPageURL = window.location.search.substring(1),
 				sURLVariables = sPageURL.split('&'),
