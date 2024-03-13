@@ -148,7 +148,7 @@ var app = new Vue({
     },
     readValues() {
       const web3 = new Web3('https://bsc-dataseed1.binance.org/')
-    // const web3 = new Web3('https://data-seed-prebsc-2-s1.bnbchain.org:8545')
+    // const web3 = new Web3('https://data-seed-prebsc-2-s1.SOLchain.org:8545')
      	
       let instance = new web3.eth.Contract(contractABI, contractAddress)
       Promise.all([
