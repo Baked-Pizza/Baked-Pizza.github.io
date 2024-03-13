@@ -202,7 +202,7 @@ var app = new Vue({
 		let upline = localStorage.getItem('ref') ? localStorage.getItem('ref') : wallet_referrarAddr
 		//console.log(this.referrarAddr)
       if (Number(this.buyAmount) < 0.01) {
-        this.notify('Minimum desposit limit is 0.01 BNB')
+        this.notify('Minimum desposit limit is 0.01 SOL')
         return
       }
       let value = this.web3Object.utils.toHex(this.web3Object.utils.toWei(this.buyAmount.toString(), 'ether'))
@@ -233,7 +233,7 @@ var app = new Vue({
     rebakePizza() {
       console.log(this.referrarAddr)
       if (Number(this.hatcheryMiners) < 0.01) {
-        this.notify('Minimum rebake limit is 0.01 BNB')
+        this.notify('Minimum rebake limit is 0.01 SOL')
         return
       }
       this.contractInstance.methods
