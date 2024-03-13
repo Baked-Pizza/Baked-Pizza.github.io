@@ -37,9 +37,9 @@ var app = new Vue({
         package: WalletConnectProvider,
         options: {
           rpc: {
-            56: 'https://bsc-dataseed1.binance.org/'
+            xxxx: 'https://'
           },
-          chainId: 56,
+          chainId: xxxx,
           infuraId: 'd85fda7b424b4212ba72f828f48fbbe1',
           pollingInterval: '10000'
         }
@@ -122,10 +122,10 @@ var app = new Vue({
       this.web3Object = new Web3(provider)
 
       this.chainId = await this.web3Object.eth.getChainId()
-      if (this.chainId !== 56) {
+      if (this.chainId !== xxxx) {
 
         //if (this.chainId !== 97) {
-        this.notify('Please Connect You Wallet to Binance Smart Chain')
+        this.notify('Please Connect You Wallet to Solana Chain')
         return
       }
 
